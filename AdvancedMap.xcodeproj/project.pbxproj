@@ -6,15 +6,51 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		42D4864826F4CADF002ACADF /* plugin_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D4860C26F4BAD7002ACADF /* plugin_start.cpp */; };
+		42D4864926F4CAE3002ACADF /* kern_start.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D4862526F4BCCE002ACADF /* kern_start.cpp */; };
+		42D4864A26F4CFAD002ACADF /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D4862A26F4C154002ACADF /* libkmod.a */; };
+		42D4864F26F4D9A0002ACADF /* AdvancedMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D4864D26F4D9A0002ACADF /* AdvancedMap.cpp */; };
+		42D4865026F4D9A0002ACADF /* AdvancedMap.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 42D4864E26F4D9A0002ACADF /* AdvancedMap.hpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		42D4860226F4B963002ACADF /* AdvancedMap.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedMap.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D4860C26F4BAD7002ACADF /* plugin_start.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = plugin_start.cpp; sourceTree = "<group>"; };
+		42D4860E26F4BB13002ACADF /* kern_mach.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_mach.hpp; sourceTree = "<group>"; };
+		42D4860F26F4BB13002ACADF /* kern_util.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_util.hpp; sourceTree = "<group>"; };
+		42D4861026F4BB13002ACADF /* kern_user.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_user.hpp; sourceTree = "<group>"; };
+		42D4861126F4BB13002ACADF /* kern_crypto.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_crypto.hpp; sourceTree = "<group>"; };
+		42D4861226F4BB13002ACADF /* kern_cpu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_cpu.hpp; sourceTree = "<group>"; };
+		42D4861326F4BB13002ACADF /* kern_efi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_efi.hpp; sourceTree = "<group>"; };
+		42D4861426F4BB13002ACADF /* kern_devinfo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_devinfo.hpp; sourceTree = "<group>"; };
+		42D4861526F4BB13002ACADF /* kern_compression.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_compression.hpp; sourceTree = "<group>"; };
+		42D4861626F4BB13002ACADF /* kern_iokit.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_iokit.hpp; sourceTree = "<group>"; };
+		42D4861726F4BB13002ACADF /* kern_nvram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_nvram.hpp; sourceTree = "<group>"; };
+		42D4861826F4BB13002ACADF /* kern_time.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_time.hpp; sourceTree = "<group>"; };
+		42D4861926F4BB13002ACADF /* kern_api.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_api.hpp; sourceTree = "<group>"; };
+		42D4861A26F4BB14002ACADF /* kern_config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_config.hpp; sourceTree = "<group>"; };
+		42D4861B26F4BB14002ACADF /* kern_compat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_compat.hpp; sourceTree = "<group>"; };
+		42D4861C26F4BB14002ACADF /* kern_file.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_file.hpp; sourceTree = "<group>"; };
+		42D4861D26F4BB14002ACADF /* kern_patcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_patcher.hpp; sourceTree = "<group>"; };
+		42D4861E26F4BB14002ACADF /* kern_disasm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_disasm.hpp; sourceTree = "<group>"; };
+		42D4861F26F4BB14002ACADF /* kern_version.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_version.hpp; sourceTree = "<group>"; };
+		42D4862026F4BB14002ACADF /* kern_policy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_policy.hpp; sourceTree = "<group>"; };
+		42D4862126F4BB14002ACADF /* kern_rtc.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = kern_rtc.hpp; sourceTree = "<group>"; };
+		42D4862226F4BB14002ACADF /* plugin_start.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = plugin_start.hpp; sourceTree = "<group>"; };
+		42D4862426F4BCCE002ACADF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D4862526F4BCCE002ACADF /* kern_start.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kern_start.cpp; sourceTree = "<group>"; };
+		42D4862A26F4C154002ACADF /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
+		42D4864026F4CAA6002ACADF /* AdvancedMap.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvancedMap.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D4864D26F4D9A0002ACADF /* AdvancedMap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdvancedMap.cpp; sourceTree = "<group>"; };
+		42D4864E26F4D9A0002ACADF /* AdvancedMap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AdvancedMap.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42D485FF26F4B963002ACADF /* Frameworks */ = {
+		42D4863D26F4CAA6002ACADF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D4864A26F4CFAD002ACADF /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,28 +60,109 @@
 		42D485F926F4B963002ACADF = {
 			isa = PBXGroup;
 			children = (
+				42D4860926F4B974002ACADF /* SDK */,
+				42D4862326F4BC6D002ACADF /* AdvancedMap */,
 				42D4860326F4B963002ACADF /* Products */,
+				42D4862826F4C134002ACADF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		42D4860326F4B963002ACADF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42D4860226F4B963002ACADF /* AdvancedMap.kext */,
+				42D4864026F4CAA6002ACADF /* AdvancedMap.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		42D4860926F4B974002ACADF /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				42D4860A26F4BA76002ACADF /* Headers */,
+				42D4860B26F4BA7C002ACADF /* Library */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		42D4860A26F4BA76002ACADF /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				42D4861926F4BB13002ACADF /* kern_api.hpp */,
+				42D4861B26F4BB14002ACADF /* kern_compat.hpp */,
+				42D4861526F4BB13002ACADF /* kern_compression.hpp */,
+				42D4861A26F4BB14002ACADF /* kern_config.hpp */,
+				42D4861226F4BB13002ACADF /* kern_cpu.hpp */,
+				42D4861126F4BB13002ACADF /* kern_crypto.hpp */,
+				42D4861426F4BB13002ACADF /* kern_devinfo.hpp */,
+				42D4861E26F4BB14002ACADF /* kern_disasm.hpp */,
+				42D4861326F4BB13002ACADF /* kern_efi.hpp */,
+				42D4861C26F4BB14002ACADF /* kern_file.hpp */,
+				42D4861626F4BB13002ACADF /* kern_iokit.hpp */,
+				42D4860E26F4BB13002ACADF /* kern_mach.hpp */,
+				42D4861726F4BB13002ACADF /* kern_nvram.hpp */,
+				42D4861D26F4BB14002ACADF /* kern_patcher.hpp */,
+				42D4862026F4BB14002ACADF /* kern_policy.hpp */,
+				42D4862126F4BB14002ACADF /* kern_rtc.hpp */,
+				42D4861826F4BB13002ACADF /* kern_time.hpp */,
+				42D4861026F4BB13002ACADF /* kern_user.hpp */,
+				42D4860F26F4BB13002ACADF /* kern_util.hpp */,
+				42D4861F26F4BB14002ACADF /* kern_version.hpp */,
+				42D4862226F4BB14002ACADF /* plugin_start.hpp */,
+			);
+			name = Headers;
+			path = Lilu.kext/Contents/Resources/Headers;
+			sourceTree = SOURCE_ROOT;
+		};
+		42D4860B26F4BA7C002ACADF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				42D4860C26F4BAD7002ACADF /* plugin_start.cpp */,
+			);
+			name = Library;
+			path = Lilu.kext/Contents/Resources/Library;
+			sourceTree = SOURCE_ROOT;
+		};
+		42D4862326F4BC6D002ACADF /* AdvancedMap */ = {
+			isa = PBXGroup;
+			children = (
+				42D4862426F4BCCE002ACADF /* Info.plist */,
+				42D4862526F4BCCE002ACADF /* kern_start.cpp */,
+				42D4864D26F4D9A0002ACADF /* AdvancedMap.cpp */,
+				42D4864E26F4D9A0002ACADF /* AdvancedMap.hpp */,
+			);
+			path = AdvancedMap;
+			sourceTree = "<group>";
+		};
+		42D4862826F4C134002ACADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42D4862A26F4C154002ACADF /* libkmod.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		42D4863B26F4CAA6002ACADF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42D4865026F4D9A0002ACADF /* AdvancedMap.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		42D4860126F4B963002ACADF /* AdvancedMap */ = {
+		42D4863F26F4CAA6002ACADF /* AdvancedMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42D4860626F4B963002ACADF /* Build configuration list for PBXNativeTarget "AdvancedMap" */;
+			buildConfigurationList = 42D4864526F4CAA6002ACADF /* Build configuration list for PBXNativeTarget "AdvancedMap" */;
 			buildPhases = (
-				42D485FE26F4B963002ACADF /* Sources */,
-				42D485FF26F4B963002ACADF /* Frameworks */,
-				42D4860026F4B963002ACADF /* Resources */,
+				42D4863B26F4CAA6002ACADF /* Headers */,
+				42D4863C26F4CAA6002ACADF /* Sources */,
+				42D4863D26F4CAA6002ACADF /* Frameworks */,
+				42D4864B26F4CFC6002ACADF /* Archive */,
 			);
 			buildRules = (
 			);
@@ -53,8 +170,8 @@
 			);
 			name = AdvancedMap;
 			productName = AdvancedMap;
-			productReference = 42D4860226F4B963002ACADF /* AdvancedMap.kext */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 42D4864026F4CAA6002ACADF /* AdvancedMap.kext */;
+			productType = "com.apple.product-type.kernel-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -65,7 +182,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					42D4860126F4B963002ACADF = {
+					42D4863F26F4CAA6002ACADF = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -83,26 +200,40 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42D4860126F4B963002ACADF /* AdvancedMap */,
+				42D4863F26F4CAA6002ACADF /* AdvancedMap */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		42D4860026F4B963002ACADF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		42D4864B26F4CFC6002ACADF /* Archive */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Archive;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${TARGET_BUILD_DIR}\"\n\ndist=(\"$FULL_PRODUCT_NAME\")\nif [ -d \"$DWARF_DSYM_FILE_NAME\" ]; then dist+=(\"$DWARF_DSYM_FILE_NAME\"); fi\nif [ -d \"$SOURCE_ROOT/Tools\" ]; then\n    cp -a \"$SOURCE_ROOT/Tools\" \"Tools\"\n    dist+=(\"Tools\")\nfi\n\narchive=\"${PRODUCT_NAME}-${MODULE_VERSION}-$(echo $CONFIGURATION | tr /a-z/ /A-Z/).zip\"\nrm -rf *.zip\nif [ \"$CONFIGURATION\" == \"Release\" ]; then\n  strip -x -T \"${EXECUTABLE_PATH}\" &>/dev/null || strip -x \"${EXECUTABLE_PATH}\"\nfi\nzip -qry -FS \"${archive}\" \"${dist[@]}\"\n\nrm -rf \"Tools\"\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42D485FE26F4B963002ACADF /* Sources */ = {
+		42D4863C26F4CAA6002ACADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D4864F26F4D9A0002ACADF /* AdvancedMap.cpp in Sources */,
+				42D4864926F4CAE3002ACADF /* kern_start.cpp in Sources */,
+				42D4864826F4CADF002ACADF /* plugin_start.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,11 +244,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -126,7 +257,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -142,18 +273,18 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -172,11 +303,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -185,7 +316,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -201,12 +332,15 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_FLOATING_POINT_LIBRARY_CALLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -220,39 +354,106 @@
 			};
 			name = Release;
 		};
-		42D4860726F4B963002ACADF /* Debug */ = {
+		42D4864626F4CAA6002ACADF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MARKETING_VERSION = 1.0;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MODULE_VERSION=$(MODULE_VERSION)",
+					"PRODUCT_NAME=$(PRODUCT_NAME)",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Lilu.kext/Contents/Resources";
+				INFOPLIST_FILE = "$(SRCROOT)/AdvancedMap/Info.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				);
+				MODULE_NAME = com.notjosh.AdvancedMap;
+				MODULE_START = "$(PRODUCT_NAME)_kern_start";
+				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
+				MODULE_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-mmmx",
+					"-msse",
+					"-msse2",
+					"-msse3",
+					"-mfpmath=sse",
+					"-mssse3",
+					"-ftree-vectorize",
+					"-fno-non-call-exceptions",
+					"-fno-builtin",
+					"-fno-asynchronous-unwind-tables",
+					"-Wno-unknown-warning-option",
+					"-Wno-ossharedptr-misuse",
+					"-Wno-vla",
+				);
+				OTHER_LDFLAGS = "-static";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notjosh.AdvancedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
 		};
-		42D4860826F4B963002ACADF /* Release */ = {
+		42D4864726F4CAA6002ACADF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MARKETING_VERSION = 1.0;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_ENABLE_KERNEL_DEVELOPMENT = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"MODULE_VERSION=$(MODULE_VERSION)",
+					"PRODUCT_NAME=$(PRODUCT_NAME)",
+				);
+				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Lilu.kext/Contents/Resources";
+				INFOPLIST_FILE = "$(SRCROOT)/AdvancedMap/Info.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/MacKernelSDK/Headers";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacKernelSDK/Library/x86_64",
+				);
+				LLVM_LTO = YES;
+				MODULE_NAME = com.notjosh.AdvancedMap;
+				MODULE_START = "$(PRODUCT_NAME)_kern_start";
+				MODULE_STOP = "$(PRODUCT_NAME)_kern_stop";
+				MODULE_VERSION = 1.0.0;
+				OTHER_CFLAGS = (
+					"-mmmx",
+					"-msse",
+					"-msse2",
+					"-msse3",
+					"-mfpmath=sse",
+					"-mssse3",
+					"-ftree-vectorize",
+					"-fno-non-call-exceptions",
+					"-fno-builtin",
+					"-fno-asynchronous-unwind-tables",
+					"-Wno-unknown-warning-option",
+					"-Wno-ossharedptr-misuse",
+					"-Wno-vla",
+				);
+				OTHER_LDFLAGS = "-static";
 				PRODUCT_BUNDLE_IDENTIFIER = com.notjosh.AdvancedMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				STRIP_STYLE = "non-global";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				WRAPPER_EXTENSION = kext;
 			};
@@ -270,11 +471,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42D4860626F4B963002ACADF /* Build configuration list for PBXNativeTarget "AdvancedMap" */ = {
+		42D4864526F4CAA6002ACADF /* Build configuration list for PBXNativeTarget "AdvancedMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42D4860726F4B963002ACADF /* Debug */,
-				42D4860826F4B963002ACADF /* Release */,
+				42D4864626F4CAA6002ACADF /* Debug */,
+				42D4864726F4CAA6002ACADF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
