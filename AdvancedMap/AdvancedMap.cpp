@@ -19,6 +19,7 @@ static AdvancedMapPlugin *callbackAdvancedMap = nullptr;
 
 bool AdvancedMapPlugin::init()
 {
+    DBGLOG(MODULE_SHORT, "testing, 123");
     DBGLOG(MODULE_SHORT, "init");
 
     callbackAdvancedMap = this;
