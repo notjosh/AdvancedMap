@@ -20,6 +20,7 @@ Advanced maps were added in macOS 12 Monterey, and worked fine on Intel hardware
 
 ## Confirmed Supported GPUs
 
+- AMD RX570
 - AMD 5700XT
 
 ### Configuration
