@@ -19,12 +19,12 @@ private:
     /**
      *  Hooked methods / callbacks
      */
-    static void csValidatePage(vnode_t vp, memory_object_t pager, memory_object_offset_t page_offset, const void *data, int *validated_p, int *tainted_p, int *nx_p);
+    static void patched_cs_validate_page(vnode_t vp, memory_object_t pager, memory_object_offset_t page_offset, const void *data, int *validated_p, int *tainted_p, int *nx_p);
 
     /**
      *  Original method
      */
-    mach_vm_address_t orgCsValidatePage {};
+    mach_vm_address_t orig_cs_validate_page {};
 };
 
 #endif

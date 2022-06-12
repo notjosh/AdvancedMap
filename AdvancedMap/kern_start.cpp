@@ -27,8 +27,8 @@ PluginConfiguration ADDPR(config) {
     arrsize(bootargDebug),
     bootargBeta,
     arrsize(bootargBeta),
-    KernelVersion::Monterey,
-    KernelVersion::Monterey,
+    KernelVersion::Ventura,
+    KernelVersion::Ventura,
     []() {
         advancedMap.init();
     }
