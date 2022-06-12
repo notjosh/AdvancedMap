@@ -41,15 +41,15 @@ void AdvancedMapPlugin::deinit()
 {
 }
 
-void AdvancedMapPlugin::csValidatePage(vnode_t vp, memory_object_t pager, memory_object_offset_t page_offset, const void *data, int *validated_p, int *tainted_p, int *nx_p) {
-    FunctionCast(csValidatePage,
-                 callbackAdvancedMap->orgCsValidatePage)(vp,
-                                                         pager,
-                                                         page_offset,
-                                                         data,
-                                                         validated_p,
-                                                         tainted_p,
-                                                         nx_p);
+void AdvancedMapPlugin::patched_cs_validate_page(vnode_t vp, memory_object_t pager, memory_object_offset_t page_offset, const void *data, int *validated_p, int *tainted_p, int *nx_p) {
+    FunctionCast(patched_cs_validate_page,
+                 callbackAdvancedMap->orig_cs_validate_page)(vp,
+                                                             pager,
+                                                             page_offset,
+                                                             data,
+                                                             validated_p,
+                                                             tainted_p,
+                                                             nx_p);
 
     char path[PATH_MAX];
     int pathlen = PATH_MAX;
@@ -81,23 +81,15 @@ void AdvancedMapPlugin::processPatcher(KernelPatcher &patcher)
     DBGLOG(MODULE_SHORT, "start processPatcher");
 
     const char* symbol = "_cs_validate_page";
-    mach_vm_address_t kern = patcher.solveSymbol(KernelPatcher::KernelID, symbol);
 
-    if (patcher.getError() == KernelPatcher::Error::NoError) {
-        SYSLOG(MODULE_SHORT, "found symbol: '%s' at: %p", symbol, kern);
+    KernelPatcher::RouteRequest csRoute = KernelPatcher::RouteRequest(symbol,
+                                                                      patched_cs_validate_page,
+                                                                      orig_cs_validate_page);
 
-        orgCsValidatePage = patcher.routeFunctionLong(kern,
-                                                      reinterpret_cast<mach_vm_address_t>(csValidatePage),
-                                                      true,
-                                                      true);
-
-        if (patcher.getError() != KernelPatcher::Error::NoError) {
-            SYSLOG(MODULE_SHORT, "failed to hook %s", symbol);
-        } else {
-            DBGLOG(MODULE_SHORT, "hooked %s", symbol);
-        }
+    if (patcher.routeMultipleLong(KernelPatcher::KernelID, &csRoute, 1)) {
+        DBGLOG(MODULE_SHORT, "hooked %s", symbol);
     } else {
-        SYSLOG(MODULE_SHORT, "failed to find symbol: '%s' (error: %d)", symbol, patcher.getError());
+        SYSLOG(MODULE_SHORT, "failed to hook %s", symbol);
     }
 
     DBGLOG(MODULE_SHORT, "end processPatcher");

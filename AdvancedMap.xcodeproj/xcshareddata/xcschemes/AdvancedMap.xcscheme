@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1300"
+   LastUpgradeVersion = "1400"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42D4860126F4B963002ACADF"
+               BlueprintIdentifier = "42D4863F26F4CAA6002ACADF"
                BuildableName = "AdvancedMap.kext"
                BlueprintName = "AdvancedMap"
                ReferencedContainer = "container:AdvancedMap.xcodeproj">
@@ -50,7 +50,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42D4860126F4B963002ACADF"
+            BlueprintIdentifier = "42D4863F26F4CAA6002ACADF"
             BuildableName = "AdvancedMap.kext"
             BlueprintName = "AdvancedMap"
             ReferencedContainer = "container:AdvancedMap.xcodeproj">
