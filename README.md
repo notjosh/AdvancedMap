@@ -32,7 +32,7 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 ### Configuration
 
 - Add `-advmapoff` to disable AdvancedMap
-- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (12.x is supported by
+- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (14.x is supported by
   default)
 
 ### Downloads
