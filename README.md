@@ -22,9 +22,10 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 
 ## Confirmed Supported GPUs
 
-- AMD RX570
-- AMD 5500XT
-- AMD 5700XT
+- AMD RX 570
+- AMD RX 5500XT
+- AMD RX 5700XT
+- AMD RX 6600XT
 
 ## Confirmed Unsupported GPUs
 
