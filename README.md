@@ -26,6 +26,7 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 - AMD RX 5500XT
 - AMD RX 5700XT
 - AMD RX 6600XT
+- AMD RX 6700XT
 
 ## Confirmed Unsupported GPUs
 
@@ -34,7 +35,7 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 ### Configuration
 
 - Add `-advmapoff` to disable AdvancedMap
-- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (14.x is supported by
+- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (15.x is supported by
   default)
 
 ### Downloads
