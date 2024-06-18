@@ -28,10 +28,6 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 - AMD RX 6600XT
 - AMD RX 6700XT
 
-## Confirmed Unsupported GPUs
-
-- UHD630
-
 ### Configuration
 
 - Add `-advmapoff` to disable AdvancedMap
