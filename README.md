@@ -4,7 +4,7 @@
 
 Advanced maps were added in macOS 12 Monterey, and worked fine on Intel hardware in the early betas. Later betas blocked the support. I suspect Apple aren't fully testing it on Intel, so perhaps not all hardware is supported, but it works well for me.
 
-It _seems_ like it requires a dGPU (see below for support). Please let me know if it works/doesn't work for you!
+Please let me know if it works/doesn't work for you!
 
 ## Example Screenshots
 
@@ -22,6 +22,11 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 
 ## Confirmed Supported GPUs
 
+#### Intel
+- HD 4000
+- HD 4400
+- UHD 620
+
 #### AMD
 - RX 570
 - RX 580
@@ -30,11 +35,6 @@ It _seems_ like it requires a dGPU (see below for support). Please let me know i
 - RX 6600XT
 - RX 6700XT
 - RX 6950XT
-
-#### Intel
-- HD 4000
-- HD 4400
-- UHD 620
 
 #### NVIDIA
 - QUADRO K1100m
