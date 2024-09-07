@@ -4,8 +4,6 @@
 
 Advanced maps were added in macOS 12 Monterey, and worked fine on Intel hardware in the early betas. Later betas blocked the support. I suspect Apple aren't fully testing it on Intel, so perhaps not all hardware is supported, but it works well for me.
 
-Please let me know if it works/doesn't work for you!
-
 ## Example Screenshots
 
 ### 3D Globe
@@ -19,25 +17,6 @@ Please let me know if it works/doesn't work for you!
 ### Road Markings & Trees
 
 ![](https://i.imgur.com/NCIxf0D.png)
-
-## Confirmed Supported GPUs
-
-#### Intel
-- HD 4000
-- HD 4400
-- UHD 620
-
-#### AMD
-- RX 570
-- RX 580
-- RX 5500XT
-- RX 5700XT
-- RX 6600XT
-- RX 6700XT
-- RX 6950XT
-
-#### NVIDIA
-- QUADRO K1100m
 
 ### Configuration
 
