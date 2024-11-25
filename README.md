@@ -21,7 +21,7 @@ Advanced maps were added in macOS 12 Monterey, and worked fine on Intel hardware
 ### Configuration
 
 - Add `-advmapoff` to disable AdvancedMap
-- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (12.x - 15.x is supported by
+- Add `-advmapbeta` to enable AdvancedMap on unsupported OS versions (12.x - 15.x are supported by
   default)
 
 ### Downloads
