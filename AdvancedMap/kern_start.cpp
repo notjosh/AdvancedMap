@@ -27,8 +27,8 @@ PluginConfiguration ADDPR(config) {
     arrsize(bootargDebug),
     bootargBeta,
     arrsize(bootargBeta),
-    KernelVersion::Sequoia,
-    KernelVersion::Sequoia,
+    KernelVersion::Tahoe,
+    KernelVersion::Tahoe,
     []() {
         advancedMap.init();
     }
